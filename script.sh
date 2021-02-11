@@ -19,26 +19,26 @@ echo "Hello ${NAME}"
 # SIMPLE IF STATEMENT, closing if with fi
 if [ "$NAME" == "Sakib" ]
 then
- echo "Your name is Sakib!"
+    echo "Your name is Sakib!"
 fi 
 
 # IF-ELSE
 if [ "$NAME" == "Sakib" ]
 then
- echo "Your name is Sakib!"
+    echo "Your name is Sakib!"
 else
- echo "Your name is NOT Sakib!"
+    echo "Your name is NOT Sakib!"
 fi 
 
 # ELSE-IF (elif)
 if [ "$NAME" == "Sakib" ]
 then
- echo "Your name is Sakib!"
+    echo "Your name is Sakib!"
 elif [ "$NAME" == "Alamin" ]
 then
- echo "Your name is Alamin"
+    echo "Your name is Alamin"
 else
- echo "Your name is NOT Sakib or Alamin!"
+    echo "Your name is NOT Sakib or Alamin!"
 fi 
 
 # COMPARISON
@@ -53,12 +53,12 @@ X=15
 Y=15
 if [ "$X" -eq "$Y" ]
 then
- echo "X is equal to Y"
+    echo "X is equal to Y"
 elif [ "$X" -ge "$Y" ]
 then
- echo "X is greater than Y"
+    echo "X is greater than Y"
 else
-echo "X is less than Y"
+    echo "X is less than Y"
 fi
 
 # FILE CONDITIONS
@@ -75,21 +75,21 @@ fi
 FILE="test.txt"
 if [ -f "$FILE" ]
 then
- echo "$FILE is a file"
+    echo "$FILE is a file"
 else
- echo "$FILE is not a file"
+    echo "$FILE is not a file"
 fi
 
 # CASE STATEMENT
 read -p "Are you 21 or over? Y/N: " ANSWER
 case "$ANSWER" in
- [yY] | [yY][eE][sS])
-  echo "You can have a drink!"
-  ;;
- [nN] | [nN][oO])
-  echo "You can not have a drink!"
-  ;;
- *)
-  echo "enter y/yes or n/no"
-  ;;
+    [yY] | [yY][eE][sS])
+        echo "You can have a drink!"
+        ;;
+    [nN] | [nN][oO])
+        echo "You can not have a drink!"
+        ;;
+    *)
+        echo "enter y/yes or n/no"
+        ;;
 esac
